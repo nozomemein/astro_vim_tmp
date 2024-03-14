@@ -6,5 +6,9 @@ return {
   {
     "slim-template/vim-slim",
     lazy=false,
+  },
+  {
+    "tpope/vim-rails",
+    lazy=false,
   }
   }

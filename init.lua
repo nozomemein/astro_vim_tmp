@@ -81,6 +81,8 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    vim.g.copilot_no_tab_map = true
+    vim.api.nvim_set_keymap("i", "<C-i>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
   end,
 -- set highlight group for any theme
   -- the key is the name of the colorscheme or init
