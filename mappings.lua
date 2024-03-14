@@ -24,9 +24,18 @@ return {
     ["<S-h>"] = {"^"},
     ["<S-k>"] = {"{"},
     ["<S-j>"] = {"}"},
+    ["<leader>rn"] = {":RSpecNearest<CR>", desc = "Run nearest spec", silent = true},
+    ["<leader>rf"] = {":RSpecCurrentFile<CR>", desc = "Run current file spec", silent = true},
+    ["<leader>rr"] = {":RSpecRerun<CR>", desc = "Rerun spec", silent = true},
+    ["<leader>rF"] = {":RSpecOnlyFailures<CR>", desc = "Run only failed spec", silent = true},
+    ["<leader>rs"] = {":RSpecShowLastResult<CR>", desc = "Show spec results", silent = true},
+
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
+  i = {
+    ["<C-i>"] =  { 'copilot#Accept("<CR>")', silent = true, expr = true },
+  }
 }
