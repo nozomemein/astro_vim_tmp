@@ -48,6 +48,6 @@ return {
     -- ["<esc>"] = false,
   },
   i = {
-    ["<C-i>"] =  { 'copilot#Accept("<CR>")', silent = true, expr = true },
+    ["<C-l>"] =  { 'copilot#Accept("<CR>")', silent = true, expr = true, script = true, replace_keycodes = false },
   }
 }
