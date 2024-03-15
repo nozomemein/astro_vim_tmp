@@ -10,5 +10,9 @@ return {
   {
     "tpope/vim-rails",
     lazy=false,
+  },
+  {
+    "noprompt/vim-yardoc",
+    lazy=false,
   }
-  }
+}
