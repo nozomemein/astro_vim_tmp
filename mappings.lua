@@ -41,7 +41,7 @@ return {
     ["<leader>rr"] = {":RSpecRerun<CR>", desc = "Rerun spec", silent = true},
     ["<leader>rF"] = {":RSpecOnlyFailures<CR>", desc = "Run only failed spec", silent = true},
     ["<leader>rs"] = {":RSpecShowLastResult<CR>", desc = "Show spec results", silent = true},
-    ["<leader>dr"] = {"<cmd>lua require('user.rspec-docker').run_docker_rspec()<CR>", desc = 'Run Rspec in Docker'}
+    ["<leader>rd"] = {"<cmd>lua require('user.rspec-docker').run_docker_rspec()<CR>", desc = 'Run Rspec in Docker'}
 
   },
   t = {
