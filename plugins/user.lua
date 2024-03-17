@@ -22,6 +22,11 @@ return {
         'nvim-lua/plenary.nvim',
         'stevearc/dressing.nvim', -- optional for vim.ui.select
     },
-    config = true,
+    config = function()
+      require("flutter-tools").setup {
+        fvm = true,
+        flutter_path = "/opt/homebrew/bin/dart", -- brewでinstallしたdartのパスにしないとLSPが動かない
+      }
+    end,
   }
 }
