@@ -34,14 +34,14 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<S-l>"] = {"$"},
     ["<S-h>"] = {"^"},
-    ["<S-k>"] = {"{"},
-    ["<S-j>"] = {"}"},
+    ["K"] = { "<Cmd>lua vim.lsp.buf.hover()<CR>", desc = "LSP Hover" }, -- flutter-tools対応
+    ["gd"] = { "<Cmd>lua vim.lsp.buf.definition()<CR>", desc = "LSP Go to Definition" }, -- flutter-tools対応
     ["<leader>rn"] = {":RSpecNearest<CR>", desc = "Run nearest spec", silent = true},
     ["<leader>rf"] = {":RSpecCurrentFile<CR>", desc = "Run current file spec", silent = true},
     ["<leader>rr"] = {":RSpecRerun<CR>", desc = "Rerun spec", silent = true},
     ["<leader>rF"] = {":RSpecOnlyFailures<CR>", desc = "Run only failed spec", silent = true},
     ["<leader>rs"] = {":RSpecShowLastResult<CR>", desc = "Show spec results", silent = true},
-    ["<leader>rd"] = {"<cmd>lua require('user.rspec-docker').run_docker_rspec()<CR>", desc = 'Run Rspec in Docker'}
+    ["<leader>rd"] = {"<cmd>lua require('user.rspec-docker').run_docker_rspec()<CR>", desc = 'Run Rspec in Docker'}, --docker rspecのコマンド
 
   },
   t = {
