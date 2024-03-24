@@ -20,7 +20,6 @@ return {
       "vim",
       "yaml",
       "rust",
-      "dart",
     })
   end,
 }
