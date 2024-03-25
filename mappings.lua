@@ -36,6 +36,7 @@ return {
     ["<S-h>"] = {"^"},
     ["K"] = { "<Cmd>lua vim.lsp.buf.hover()<CR>", desc = "LSP Hover" }, -- flutter-tools対応
     ["gd"] = { "<Cmd>lua vim.lsp.buf.definition()<CR>", desc = "LSP Go to Definition" }, -- flutter-tools対応
+    ["<leader>rl"] = {":FlutterLspRestart<CR>", desc = "Restart Flutter LSP"},
     ["<leader>rn"] = {":RSpecNearest<CR>", desc = "Run nearest spec", silent = true},
     ["<leader>rf"] = {":RSpecCurrentFile<CR>", desc = "Run current file spec", silent = true},
     ["<leader>rr"] = {":RSpecRerun<CR>", desc = "Rerun spec", silent = true},
