@@ -28,5 +28,9 @@ return {
         flutter_path = "/opt/homebrew/bin/dart", -- brewでinstallしたdartのパスにしないとLSPが動かない
       }
     end,
+  },
+  {
+    lazy=false,
+    'bronson/vim-trailing-whitespace'
   }
 }
