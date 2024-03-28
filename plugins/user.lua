@@ -32,5 +32,12 @@ return {
   {
     lazy=false,
     'bronson/vim-trailing-whitespace'
+  },
+  {
+    "kylechui/nvim-surround",
+    lazy=false,
+    config = function()
+      require("nvim-surround").setup()
+    end
   }
 }
