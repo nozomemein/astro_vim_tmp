@@ -51,5 +51,8 @@ return {
   },
   i = {
     ["<C-l>"] =  { 'copilot#Accept("<CR>")', silent = true, expr = true, script = true, replace_keycodes = false },
+  },
+  x = {
+    ["p"] = { '"_dP', desc = "Paste without yanking", silent = true },
   }
 }
