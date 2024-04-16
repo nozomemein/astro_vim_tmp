@@ -39,5 +39,11 @@ return {
     config = function()
       require("nvim-surround").setup()
     end
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   }
 }
